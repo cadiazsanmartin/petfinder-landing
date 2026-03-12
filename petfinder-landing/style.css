@@ -1,0 +1,372 @@
+/* ========================= */
+/* GENERAL */
+/* ========================= */
+
+:root{
+    --bg-soft:#f7f5f3;
+    --bg-footer:#efe8e2;
+    --text-dark:#2d3436;
+    --text-soft:#636e72;
+    --blue:#4a90e2;
+    --blue-hover:#3b7ccc;
+    --orange:#ff7a3d;
+    --orange-hover:#f06a2c;
+    --white:#ffffff;
+    --shadow:0 10px 25px rgba(0,0,0,0.08);
+    --radius-lg:16px;
+    --radius-md:12px;
+}
+
+body{
+    font-family:'Lato', sans-serif;
+    background:var(--bg-soft);
+    color:var(--text-dark);
+}
+
+.container{
+    max-width:1100px;
+}
+
+img{
+    max-width:100%;
+    display:block;
+}
+
+section{
+    padding-top:80px;
+    padding-bottom:80px;
+    overflow:hidden;
+}
+/* ========================= */
+/* NAVBAR */
+/* ========================= */
+
+.site-header{
+    background:var(--white);
+    border-bottom:1px solid rgba(0,0,0,0.04);
+}
+
+.logo{
+    font-family:'Poppins', sans-serif;
+    font-weight:700;
+    font-size:1.5rem;
+    color:var(--text-dark) !important;
+}
+
+.navbar-nav .nav-link{
+    color:var(--text-dark);
+    font-weight:500;
+    transition:0.3s;
+}
+
+.navbar-nav .nav-link:hover{
+    color:var(--blue);
+}
+
+/* ========================= */
+/* BOTONES */
+/* ========================= */
+
+.btn-alerta,
+.btn-hero{
+    border:none;
+    border-radius:10px;
+    font-weight:700;
+    text-decoration:none;
+    display:inline-block;
+    transition:0.3s;
+}
+
+.btn-alerta{
+    background:#ff7a3d;
+    color:white;
+    padding:12px 26px;
+    border-radius:10px;
+    font-weight:600;
+    text-decoration:none;
+    transition:0.2s ease;
+}
+
+.btn-alerta:hover{
+    background:#f06a2c;
+    transform:translateY(-2px);
+}
+
+.btn-hero{
+    background:#4a90e2;
+    color:white;
+    padding:12px 26px;
+    border-radius:10px;
+    font-weight:600;
+    text-decoration:none;
+    transition:0.2s ease;
+}
+
+.btn-hero:hover{
+    background:#3b7ccc;
+    transform:translateY(-2px);
+}
+
+/* ========================= */
+/* HERO */
+/* ========================= */
+
+.hero-section{
+    padding:90px 0;
+    background:#f7f5f3;
+}
+
+.hero-section .row{
+    align-items:center;
+}
+
+.hero-title{
+    font-family:'Poppins', sans-serif;
+    font-size:3.2rem;
+    font-weight:700;
+    line-height:1.15;
+    margin-bottom:22px;
+    max-width:560px;
+}
+
+.hero-text{
+    font-size:1.1rem;
+    line-height:1.8;
+    color:#636e72;
+    max-width:480px;
+    margin-bottom:30px;
+}
+
+.hero-img{
+    max-width:460px;
+    width:100%;
+    margin:auto;
+    border-radius:18px;
+}
+
+/* ========================= */
+/* SECCIONES */
+/* ========================= */
+
+.info-section{
+    padding:70px 0;
+}
+
+.section-title{
+    font-family:'Poppins', sans-serif;
+    font-size:2rem;
+    font-weight:600;
+    color:var(--text-dark);
+    margin-bottom:45px;
+}
+
+/* ========================= */
+/* CÓMO FUNCIONA */
+/* ========================= */
+
+.card-pet{
+    background:white;
+    border-radius:18px;
+    box-shadow:0 15px 35px rgba(0,0,0,0.08);
+    padding:35px 28px;
+    height:100%;
+    transition:transform 0.2s ease;
+}
+
+.card-pet:hover{
+    transform:translateY(-6px);
+}
+
+.step-number{
+    width:52px;
+    height:52px;
+    margin:0 auto 20px;
+    border-radius:50%;
+    background:rgba(74,144,226,0.12);
+    color:var(--blue);
+    font-family:'Poppins', sans-serif;
+    font-weight:700;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+
+.card-title-custom{
+    font-family:'Poppins', sans-serif;
+    font-size:1.25rem;
+    font-weight:600;
+    color:var(--text-dark);
+    margin-bottom:12px;
+}
+
+.card-text-custom{
+    font-size:0.98rem;
+    line-height:1.7;
+    color:var(--text-soft);
+    margin-bottom:0;
+}
+
+/* ========================= */
+/* BENEFICIOS */
+/* ========================= */
+
+.benefits-section{
+    padding-top:20px;
+}
+
+.benefit-box{
+    padding:16px 18px;
+}
+
+.benefit-icon{
+    font-size:2rem;
+    margin-bottom:14px;
+}
+
+.benefit-title{
+    font-family:'Poppins', sans-serif;
+    font-size:1.2rem;
+    font-weight:600;
+    color:var(--text-dark);
+    margin-bottom:12px;
+}
+
+.benefit-text{
+    font-size:0.98rem;
+    line-height:1.7;
+    color:var(--text-soft);
+    margin-bottom:0;
+    max-width:290px;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+/* ========================= */
+/* CTA */
+/* ========================= */
+
+.cta-section{
+    background: linear-gradient(135deg,#4a90e2,#3c78c9);
+    padding:100px 0;
+    text-align:center;
+}
+
+.cta-title{
+    font-family:'Poppins', sans-serif;
+    font-size:2.2rem;
+    font-weight:600;
+    margin-bottom:14px;
+    max-width:520px;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+.cta-text{
+    font-size:1.1rem;
+    margin-bottom:28px;
+    max-width:420px;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+/* ========================= */
+/* FOOTER */
+/* ========================= */
+
+.footer-section{
+    background:var(--bg-footer);
+    padding:32px 0;
+}
+
+.footer-logo{
+    font-family:'Poppins', sans-serif;
+    font-size:1.25rem;
+    font-weight:700;
+    color:var(--text-dark);
+}
+
+.footer-copy{
+    font-size:0.85rem;
+    color:var(--text-soft);
+}
+
+.footer-links a{
+    text-decoration:none;
+    color:var(--text-dark);
+    font-weight:600;
+    transition:0.3s;
+}
+
+.footer-links a:hover{
+    color:var(--blue);
+}
+
+.footer-links a:hover{
+    color:#4a90e2;
+}
+
+/* ========================= */
+/* MOBILE FIRST AJUSTES */
+/* ========================= */
+
+@media (max-width: 991px){
+
+    .navbar-collapse{
+        margin-top:16px;
+        text-align:center;
+    }
+
+    .hero-section{
+        padding:40px 0 50px;
+        text-align:center;
+    }
+
+    .hero-title{
+        font-size:2rem;
+        max-width:100%;
+        margin-left:auto;
+        margin-right:auto;
+    }
+
+    .hero-text{
+        font-size:1rem;
+        max-width:100%;
+        margin-left:auto;
+        margin-right:auto;
+    }
+
+    .hero-img{
+        max-width:320px;
+        margin-top:8px;
+    }
+
+    .info-section{
+        padding:55px 0;
+    }
+
+    .section-title{
+        font-size:1.7rem;
+        margin-bottom:32px;
+    }
+
+    .card-pet{
+        padding:28px 20px;
+    }
+
+    .cta-section{
+        padding:55px 0;
+        border-radius:20px 20px 0 0;
+    }
+
+    .cta-title{
+        font-size:1.75rem;
+    }
+
+    .cta-text{
+        font-size:1rem;
+    }
+
+    .footer-section{
+        text-align:center;
+    }
+}
